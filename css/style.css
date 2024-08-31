@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Work Sans", sans-serif;
+}
+
+body {
+    font-size: 1.1rem;
+    background-color: hsl(275, 100%, 97%);
+    position: relative;
+}
+
+.bg {
+    background-image: url('../assets/images/background-pattern-desktop.svg');
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.card {
+    width: 29vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    z-index: 1000;
+    background-color: #ffff;
+    border-radius: 0.3rem;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.title img {
+    width: 27px;
+}
+
+h3 {
+    font-size: 0.8rem;
+    color: hsl(292, 42%, 14%);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+p {
+    color: hsl(292, 16%, 49%);
+    font-size: 0.8rem;
+}
+
+
+.content-title {
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.content-title,
+.navigate-btn {
+    display: flex;
+    align-items: center;
+}
+
+.border-top{
+    border-top: 1px solid hsl(300, 8%, 87%);
+}
+
+.hidden-content {
+    display: none;
+}
+
+.help-content.hide {
+    display: none;
+}
+
+/* Icons styles */
+.help-plus-icon,
+.hidden-icon {
+    display: none !important;
+}
+
+.help-plus-icon.show{
+    display: block !important;
+}
+
+.hidden-icon.show {
+    display: block !important;
+}
+.hidden-content.show{
+    display: block !important;
+}
+.plus-icon-btn.show {
+    display: block !important;  
+}
+.plus-icon-btn.hide {
+    display: none !important;  
+}
+
+.navigate-btn img {
+    display: block;
+    width: 20px;
+    position: relative;
+    bottom: 5px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 85vw;
+    }
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 1000px) {
+    .card {
+        width: 55vw;
+    }
+}
